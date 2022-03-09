@@ -23,7 +23,7 @@ def get_contest_tweet():
 
     tweet = client.search_recent_tweets('from:stellaphone #crypticcluecontest',
                                          start_time=start,
-                                         end_time=end).data[0]
+                                         end_time=end).data[-1]
 
     return tweet
 
